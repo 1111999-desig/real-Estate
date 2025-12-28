@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Valley Residencies - Project Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">GreenPlots</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary">Book Site Visit</a>
+        </div>
+    </header>
+
+    <!-- Project Detail Hero -->
+    <section class="detail-hero">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="projects.html">Projects</a> / <span>Green Valley
+                    Residencies</span>
+            </nav>
+            <h1>Green Valley Residencies</h1>
+            <p><i class="fas fa-map-marker-alt"></i> North suburb, 15m from highway</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container detail-content">
+        <div class="main-column">
+            <!-- Project Video/Image Gallery -->
+            <div class="gallery-container">
+                <video autoplay muted loop class="featured-media">
+                    <source src="assets/intro-video-1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Interactive Plot Map Section -->
+            <section class="plot-layout-section">
+                <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Interactive Plot Layout</h2>
+                <div class="map-legend">
+                    <span class="legend-item"><span class="dot available"></span> Available</span>
+                    <span class="legend-item"><span class="dot reserved"></span> Reserved</span>
+                    <span class="legend-item"><span class="dot sold"></span> Sold</span>
+                </div>
+                <!-- Simple SVG Plot Map -->
+                <div class="svg-container">
+                    <svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+                        <!-- Background -->
+                        <rect width="800" height="400" fill="#f9fafb" rx="20" />
+                        <!-- Road -->
+                        <path d="M0,200 L800,200" stroke="#d1d5db" stroke-width="40" fill="none"
+                            stroke-dasharray="20,10" />
+                        <!-- Plots Top Row -->
+                        <rect x="50" y="50" width="120" height="120" class="plot available" data-id="101" fill="#22c55e"
+                            fill-opacity="0.8" />
+                        <text x="110" y="115" text-anchor="middle" fill="white" font-weight="bold">101</text>
+
+                        <rect x="200" y="50" width="120" height="120" class="plot sold" data-id="102" fill="#ef4444"
+                            fill-opacity="0.8" />
+                        <text x="260" y="115" text-anchor="middle" fill="white" font-weight="bold">102</text>
+
+                        <rect x="350" y="50" width="120" height="120" class="plot available" data-id="103"
+                            fill="#22c55e" fill-opacity="0.8" />
+                        <text x="410" y="115" text-anchor="middle" fill="white" font-weight="bold">103</text>
+
+                        <rect x="500" y="50" width="120" height="120" class="plot reserved" data-id="104" fill="#eab308"
+                            fill-opacity="0.8" />
+                        <text x="560" y="115" text-anchor="middle" fill="white" font-weight="bold">104</text>
+
+                        <rect x="650" y="50" width="120" height="120" class="plot available" data-id="105"
+                            fill="#22c55e" fill-opacity="0.8" />
+                        <text x="710" y="115" text-anchor="middle" fill="white" font-weight="bold">105</text>
+
+                        <!-- Plots Bottom Row -->
+                        <rect x="50" y="230" width="120" height="120" class="plot sold" data-id="201" fill="#ef4444"
+                            fill-opacity="0.8" />
+                        <text x="110" y="295" text-anchor="middle" fill="white" font-weight="bold">201</text>
+
+                        <rect x="200" y="230" width="120" height="120" class="plot available" data-id="202"
+                            fill="#22c55e" fill-opacity="0.8" />
+                        <text x="260" y="295" text-anchor="middle" fill="white" font-weight="bold">202</text>
+
+                        <rect x="350" y="230" width="120" height="120" class="plot reserved" data-id="203"
+                            fill="#eab308" fill-opacity="0.8" />
+                        <text x="410" y="295" text-anchor="middle" fill="white" font-weight="bold">203</text>
+
+                        <rect x="500" y="230" width="120" height="120" class="plot available" data-id="204"
+                            fill="#22c55e" fill-opacity="0.8" />
+                        <text x="560" y="295" text-anchor="middle" fill="white" font-weight="bold">204</text>
+
+                        <rect x="650" y="230" width="120" height="120" class="plot available" data-id="205"
+                            fill="#22c55e" fill-opacity="0.8" />
+                        <text x="710" y="295" text-anchor="middle" fill="white" font-weight="bold">205</text>
+                    </svg>
+                </div>
+            </section>
+
+            <!-- Plot Table -->
+            <section class="plot-table-section">
+                <h3>Plot Details & Availability</h3>
+                <table class="plot-table">
+                    <thead>
+                        <tr>
+                            <th>Plot No.</th>
+                            <th>Size (sq.ft)</th>
+                            <th>Facing</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>1200</td>
+                            <td>East</td>
+                            <td><span class="status-badge available">Available</span></td>
+                            <td><a href="contact.html?plot=101" class="btn btn-primary btn-sm">Book</a></td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>2400</td>
+                            <td>West</td>
+                            <td><span class="status-badge sold">Sold</span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>104</td>
+                            <td>1500</td>
+                            <td>North</td>
+                            <td><span class="status-badge reserved">Reserved</span></td>
+                            <td><a href="contact.html?plot=104" class="btn btn-outline btn-sm">Enquire</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="detail-sidebar">
+            <div class="sidebar-card booking-card">
+                <h3>Interested in this project?</h3>
+                <p>Book a free site visit today to see the location.</p>
+                <a href="contact.html" class="btn btn-primary"
+                    style="width: 100%; margin-bottom: 1rem; text-align: center;">Book Site Visit</a>
+                <a href="assets/plot-view-1.jpg" download class="btn btn-outline"
+                    style="width: 100%; text-align: center;">Download Brochure <i class="fas fa-download"></i></a>
+            </div>
+
+            <div class="sidebar-card contact-card">
+                <h3>Agent Contact</h3>
+                <p><strong>John Doe</strong></p>
+                <p><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+                <a href="https://wa.me/1234567890" class="btn btn-outline"
+                    style="width: 100%; margin-top: 1rem; text-align: center; border-color: #25d366; color: #128c7e;">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3 class="logo" style="color: white; margin-bottom: 1.5rem;">GreenPlots</h3>
+                    <p>Redefining real estate with trust and excellence. Find your perfect plot today.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+                    <p><i class="fas fa-envelope"></i> info@greenplots.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Real Estate Ave, Suite 100</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GreenPlots. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

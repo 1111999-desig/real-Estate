@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Book Visit - GreenPlots</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">GreenPlots</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary">Book Site Visit</a>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Schedule a site visit or ask us anything about our projects.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container contact-grid">
+            <!-- Booking Form -->
+            <div class="contact-form-container">
+                <h2>Book a Free Site Visit</h2>
+                <p>Fill out the form below and our agent will contact you to confirm the schedule.</p>
+                <form id="booking-form" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="project">Interested Project</label>
+                        <select id="project" name="project">
+                            <option value="green-valley">Green Valley Residencies</option>
+                            <option value="sunset-palms">Sunset Palms Estate</option>
+                            <option value="oakwood-heights">Oakwood Heights</option>
+                            <option value="other">Other / Not Sure</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Visit Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Message (Optional)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Schedule Visit Now</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info-sidebar">
+                <div class="info-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>+1 (234) 567-890</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p>info@greenplots.com</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Our Office</h3>
+                        <p>123 Real Estate Ave, Suite 100<br>Central Business District, City 56789</p>
+                    </div>
+                </div>
+
+                <div class="whatsapp-card">
+                    <h3>Direct Support</h3>
+                    <p>Prefer chatting? Message us on WhatsApp for instant assistance.</p>
+                    <a href="https://wa.me/1234567890" class="btn btn-outline"
+                        style="border-color: #25d366; color: #128c7e; width: 100%; text-align: center;">
+                        <i class="fab fa-whatsapp"></i> Chat with an Agent
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Placeholder -->
+    <section class="office-map">
+        <div class="container">
+            <div class="map-placeholder">
+                <i class="fas fa-map-marked-alt"></i>
+                <p>Interactive Map of Our Head Office Location</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3 class="logo" style="color: white; margin-bottom: 1.5rem;">GreenPlots</h3>
+                    <p>Redefining real estate with trust and excellence. Find your perfect plot today.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+                    <p><i class="fas fa-envelope"></i> info@greenplots.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Real Estate Ave, Suite 100</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GreenPlots. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
